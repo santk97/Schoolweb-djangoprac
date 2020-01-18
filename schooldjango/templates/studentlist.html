@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+<center>
+<h1>Student List {{selected}}</h1>
+    <form method="POST">
+        {% csrf_token %}
+
+        <label > Show Students From</label>
+        <select name="filter_dept">
+
+      <option selected> All </option>
+        {% for d in dept %}
+        <option   >{{ d.dept_name }}</option>
+        {% endfor %}
+            </select>
+        <button> Search</button>
+    </form>
+            <br>
+        <br>
+    {% if stud %}
+<table>
+    <tr>
+    <th>Roll number</th>
+    <th>Name</th>
+    <th>Department</th>
+    <th>City</th>
+    </tr>
+    {% for s in stud %}
+    <tr>
+        <td>{{ s.rollno }}</td>
+        <td>{{ s.name }}</td>
+        <td>{{ s.department }}</td>
+        <td>{{ s.city }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+    {% else %}
+    <h2> There are no students in the selected Department.</h2>
+    {% endif %}
+    </center>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEpartments</title>
+</head>
+<body>
+<h1> The list of all the Department in Our College</h1>
+{% for d in dept %}
+<ul>
+
+    <li> {{ d.dept_name }}</li>
+</ul>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register a New Student</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+<center>
+    <h1> Register a new Student</h1>
+    <br>
+    <h4> Fill the details</h4>
+    <form method="post" >
+        {% csrf_token %}
+        {{error}}
+
+      <label>Name</label>
+        <input type="text" name="name">
+        <br>
+        <label>Roll No.</label>
+        <input type="text" name="rollno">
+        <br>
+        <label  >Department</label>
+        <select id="id_department" name="department" >
+            <option selected> ---------- </option>
+        {% for d in dept %}
+        <option   >{{ d.dept_name }}</option>
+        {% endfor %}
+        </select>
+        <br>
+        <label>City</label>
+
+        <input type="text" name="city">
+        <br> -->
+        <input type="Submit" value="Submit">
+
+
+    </form>
+
+</center>
+
+</body>
+</html>

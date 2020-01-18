@@ -1,0 +1,18 @@
+h1
+{
+color:red;
+}
+h2
+{
+color:green;
+}
+a
+{
+text-decoration: none;
+}
+table, th, td {
+  border: 1px solid black;
+}
+input{
+margin:10px;
+}
