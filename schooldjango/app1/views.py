@@ -46,3 +46,25 @@ def register(request):
     else :
         reg_form=Reg_form()
     return render(request, 'register.html', {'dept': dept})
+
+def indiv(request):
+    selected_Student=request.GET.get('name')
+    print(selected_Student)
+    stud = Student.objects.order_by('rollno')
+    selected=Student.objects.filter(name=selected_Student).first()
+    #print(selected)
+    dept = Dept.objects.all()
+    if request.method == 'POST':
+        fform = filter_form(request.POST)
+        if fform.is_valid():
+            print(fform.cleaned_data['filter_dept'])
+            selected_dept = fform.cleaned_data['filter_dept']
+            stud = Student.objects.filter(department=selected_dept)
+            print(stud)
+            return render(request, 'indiv.html', {'stud': stud, 'dept': dept, 'selected': selected_dept,'selstud':selected})
+        else:
+            print(fform.errors)
+            return render(request, 'indiv.html', {'stud': stud, 'dept': dept,'selstud':selected})
+    else:
+
+        return render(request, 'indiv.html', {'stud': stud, 'dept': dept,'selstud':selected})

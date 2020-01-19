@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student details</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+<h1>Student List {{selected}}</h1>
+    <form method="POST">
+        {% csrf_token %}
+
+        <label > Show Students From</label>
+        <select name="filter_dept">
+
+      <option selected> All </option>
+        {% for d in dept %}
+        <option   >{{ d.dept_name }}</option>
+        {% endfor %}
+            </select>
+        <button> Search</button>
+    </form>
+            <br>
+        <br>
+    {% if stud %}
+<ul>
+    {% for s in stud %}
+       <a href="/app1/individual?name={{s.name}}"> <li>{{ s.name }}</li></a>
+    {% ifequal selstud.name s.name %}
+
+   <table>
+    <tr>
+    <th>Roll number</th>
+    <th>Name</th>
+    <th>Department</th>
+    <th>City</th>
+    </tr>
+
+    <tr>
+        <td>{{ selstud.rollno }}</td>
+        <td>{{ selstud.name }}</td>
+        <td>{{ selstud.department }}</td>
+        <td>{{ selstud.city }}</td>
+    </tr>
+</table>
+    {% endifequal %}
+    {% endfor %}
+</ul>
+
+    {% else %}
+    <h2> There are no students in the selected Department.</h2>
+    {% endif %}
+
+</body>
+</html>
