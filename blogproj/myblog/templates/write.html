@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Write a BLOG</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<h1> Write your own blog</h1>
+<center>
+    <h1> Write your own blog</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label > Author Name :</label>
+    <input type="text" name="author">
+    <br>
+    <br>
+    <label > Title</label>
+    <input type="text" name="title">
+    <br>
+    <br>
+
+    <label > Text </label>
+    <textarea placeholder="Write your content here" name="text"> </textarea>
+    <br>
+    <br>
+<input type="Submit" value="Create blog">
+
+</center>
+</form>
+</body>
+</html>

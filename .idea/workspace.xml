@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe083a01-c205-49e1-9c7d-d35571d28654" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schooldjango/app1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/app1/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schooldjango/app1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/app1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schooldjango/app1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/app1/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schooldjango/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schooldjango/static/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/static/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schooldjango/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schooldjango/templates/indiv.html" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/templates/indiv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schooldjango/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/templates/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>

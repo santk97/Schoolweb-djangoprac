@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Dept(models.Model):
-    #choice=(('1','CSE'),('ECE','ECE'),('ECE','ECE'),('MECHANICAL','MECHANICAL'),('MECHATRONICS','MECHATRONICS'),('Applied','Applied'))
     dept_name=models.CharField(max_length=250)
 
     def __str__(self):

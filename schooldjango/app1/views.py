@@ -68,3 +68,12 @@ def indiv(request):
     else:
 
         return render(request, 'indiv.html', {'stud': stud, 'dept': dept,'selstud':selected})
+
+
+def delte(request):
+    del_name=request.GET.get('name')
+    print(del_name)
+    seldel_stud=Student.objects.filter(name=del_name).first()
+    print('the selectesd students is  ',seldel_stud)
+    seldel_stud.delete()
+    return redirect('/app1/individual')
