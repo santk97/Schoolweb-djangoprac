@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe083a01-c205-49e1-9c7d-d35571d28654" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schooldjango/app1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/app1/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schooldjango/app1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/app1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schooldjango/app1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/app1/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schooldjango/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schooldjango/templates/indiv.html" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/templates/indiv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schooldjango/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/schooldjango/templates/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../project-3-master/project-3-master/p2p_marketplace-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -54,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.codecreate">
+  <component name="RunManager" selected="Python.settings">
     <configuration name="codecreate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Django10" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,8 +92,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Django10" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myproj/myproj" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myproj/myproj/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.settings" />
         <item itemvalue="Python.codecreate" />
         <item itemvalue="Python.pop" />
       </list>
@@ -122,7 +139,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -135,6 +154,11 @@
           <url>file://$PROJECT_DIR$/schooldjango/schooldjango/urls.py</url>
           <line>17</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cbvproj/cbvproj/urls.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

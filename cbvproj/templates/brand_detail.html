@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brand Details</title>
+</head>
+<body>
+<h1> Brand details Page for {{brand_detail.brandname}}</h1>
+{% for p in brand_detail.productbrand.all %}
+<a href="/{{brand_detail.id}}/{{p.id}}/"><h3><p>{{p.p_name}}</p></h3></a>
+{% endfor %}
+</body>
+</html>

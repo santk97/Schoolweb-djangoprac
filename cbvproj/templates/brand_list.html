@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brands</title>
+</head>
+<body>
+<h1> Following are the Brands available</h1>
+<ol>
+{% for b in brands %}
+<a href="{{b.id}}/"><li>{{b}}</li> </a>
+{%endfor %}
+    </ol>
+</body>
+</html>
