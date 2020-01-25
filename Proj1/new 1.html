@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Post</title>
+</head>
+<body>
+<form method="POST" enctype="multipart/form-data">
+       {% csrf_token %}
+    {{error}}
+      <div class="main" style="margin-top:50px; margin-left:50px;">
+         {{ form.image }}
+        <br><br>
+       {{ form.caption }}
+       <input type="submit"  value="Add Picture">
+          <img style="width:100%; height:400px;" src="/media/user_images/169154.jpg" alt="'loading falied"/><br>
+		  <img style="display:inline-block; width:100%; height:400px;" src="media/user_images/0bc2c73759f8ba3b90b5196c1bfc45f5.jpg">
+
+     </div>
+     </form>
+</body>
+</html>

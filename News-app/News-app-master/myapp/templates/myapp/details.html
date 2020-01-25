@@ -1,0 +1,21 @@
+{% extends 'myapp/base.html' %}
+{% block body %}
+<br><br>
+    <div class="container-fluid">
+       <div class="row row-eq-height">
+      {% for headline in headlines.articles %}
+            {% if headline.urlToImage %}
+                <div class="col-md-4 sahil">
+                    <div class="img-thumbnail" style="background:#54647C; height:300px;width:350px; text-align:justify;" >
+                            <a href="{{ headline.url }}">
+                              <img src="{{ headline.urlToImage }}" class="bingo" alt="Nature" style="height:200px; width:340px; padding:5px; " >
+                              <br><br>
+                                <div class="caption" >
+                                <h6 class="title" style="color:white; padding:5px; text-align:justify;">{{ headline.title }}</h6>
+                                </div>
+                            </a>
+                    </div> <br> </div>
+            {% endif %}
+      {% endfor %}
+      </div></div>
+{% endblock %}

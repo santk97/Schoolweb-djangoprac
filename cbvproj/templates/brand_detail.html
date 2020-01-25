@@ -6,8 +6,14 @@
 </head>
 <body>
 <h1> Brand details Page for {{brand_detail.brandname}}</h1>
+
+<a href="/app/{{brand_detail.id}}/createproduct"><button>Add a Product</button></a>
+<h2>Product list </h2>
 {% for p in brand_detail.productbrand.all %}
-<a href="/{{brand_detail.id}}/{{p.id}}/"><h3><p>{{p.p_name}}</p></h3></a>
+
+<a href="/app/{{brand_detail.id}}/{{p.id}}/"><h3><p>{{p.p_name}}</p></h3></a>
+
 {% endfor %}
+
 </body>
 </html>

@@ -1,0 +1,52 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FEED</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body{
+        background-image:url("http://www.wedgewood-homes.com/wp-content/uploads/2016/04/grey-textures-gradient.jpg");
+    }
+</style>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-7">
+        <form method="post" action="post/">
+        {%  csrf_token  %}
+        <input type="submit" class="btn btn-info" value="Create Post" style="margin-top:20px;float:right;">
+    </form>
+        {% for post in posts %}
+
+    <div class="jumbotron" style="padding-top:10px; margin-top:80px;">
+
+        <h5  style="display:inline-block;">{{ post.caption }}</h5>
+        <br/><br/>
+        <a href="{{ post.image_url }}">{{ post.image_url }}</a>
+        <img style="display:inline-block; width:100%; height:400px;" src="{{ post.image_url }}" /><br>
+        <br>
+        <span style="align:bottom;">POSTED ON : {{ post.created_on }} </span>
+        </div>
+
+    {% endfor %}
+
+     </div>
+     <div class="col-lg-3">
+        <a href="/logout/"><button class="btn btn-danger" style="float:right; margin-top:5px;">Log Out</button></a>
+     </div>
+
+    </div>
+     </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

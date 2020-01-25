@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+      {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NEWS@24</title>
+
+
+  </head>
+ <body>
+   <header >
+    <div class='container-fluid'>
+      <div class='row'>
+
+        <div class='col-lg-2'>
+         <a href="{% url 'business' %}">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/2000px-Globe_icon.svg.png" height="36px" width="36px" style="float:left; margin-top:8px;">
+        </a>
+        </div>
+        <div class='col-lg-6'>
+        <h1>TRENDING NEWS</h1>
+        </div>
+        <div class='col-lg-4'>
+        <div class='font'>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true" style="color:black;"></i></a>
+        <a href="https://twitter.com/" ><i class="fa fa-twitter" aria-hidden="true" style="color:black;"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true" style="color:black;"></i></a>
+        <a href="https://in.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true" style="color:black;"></i></a>
+        </div>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <div class='container-fluid' style="background:#AEBED0;">
+      <div class='row'>
+        <div class='col-lg-12'>
+            <nav class="navbar navbar-expand-lg navbar-light" >
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'business' %}"><i class="fa fa-inr fa-2fw" aria-hidden="true"></i>BUSINESS</a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'entertainment' %}"><i class="fa fa-camera fa-2fw" aria-hidden="true"></i>ENTERTAINMENT</a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'sports' %}"><i class="fa fa-futbol-o fa-2fw" aria-hidden="true"></i>SPORTS</a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'health' %}"><i class="fa fa-medkit fa-2fw" aria-hidden="true"></i>HEALTH</a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'science' %}"><i class="fa fa-flask fa-2fw" aria-hidden="true"></i>SCIENCE</a>
+                  </li>
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'technology' %}"><i class="fa fa-mobile fa-2fw" aria-hidden="true"></i>TECHNOLOGY</a>
+                  </li>
+              </ul>
+            </nav>
+          </div>
+
+      </div>
+    </div>
+
+   <!-- code for header -->
+  {% block body %}
+
+  {% endblock %}
+
+
+   <!-- code for footer -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

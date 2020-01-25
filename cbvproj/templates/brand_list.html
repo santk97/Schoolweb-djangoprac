@@ -6,10 +6,17 @@
 </head>
 <body>
 <h1> Following are the Brands available</h1>
+click on the brand to view the Brand details
 <ol>
 {% for b in brands %}
-<a href="{{b.id}}/"><li>{{b}}</li> </a>
-{%endfor %}
+    <span>
+<a href="/app/{{b.id}}/"><li style="float:left;">{{b}}</li> </a>
+<a href="{% url 'app:DeleteBrand' pk=b.pk %}"><button style="float:right;margin-right:800px;">Delete</button></a>
+<button style="float:center;margin-left:100px;">Update</button>
+        <br>
+        <br>
+    </span>
+        {%endfor %}
     </ol>
 </body>
 </html>

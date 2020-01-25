@@ -1,0 +1,47 @@
+a{
+color:red;
+font-size:20px;
+text-decoration:none;
+
+}
+.date
+{
+position: absolute;
+    bottom: 5px;
+    right: 16px;
+    font-size: 20px;
+    text-decoration:underlined;
+}
+
+body{
+
+background: red;
+    background: -webkit-linear-gradient(blue, gray);
+    background: -o-linear-gradient(blue, cyan);
+    background: -moz-linear-gradient(blue, gray);
+    background: linear-gradient(blue, cyan);
+
+}
+input{
+height:10px;
+width:240px;
+padding:20px;
+background:black;
+font-size:20px;
+color:white;
+}
+.button
+{
+height:20px;
+width:200px;
+position:center;
+padding-top:9px;
+padding-bottom:30px;
+background:green;
+font-size:20px;
+color:white;
+}
+body
+{
+margin-top:150px;
+}

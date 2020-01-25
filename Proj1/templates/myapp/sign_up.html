@@ -1,0 +1,44 @@
+<HTML>
+{% load static %}
+<head>
+<link rel="stylesheet" href="{% static "css/sign.css" %}" />
+<title>
+SIGN UP....
+</title>
+</head>
+<body>
+<center>
+<form method="post">
+ {% csrf_token %}
+<input type='name'  placeholder='Enter your Full name' name="name" id="name" value={{name}}>
+</br></br>
+<input type='name' placeholder="Enter username" name="username" id=""username value={{username}}>
+</br></br>
+<input type= 'mail' placeholder='Enter your Email' name="email" id="mail" value={{email}}>
+</br></br>
+<input type='password' placeholder='Enter the password' name="password" id="password" value={{password}}>
+</br></br>
+<input class ="button" type='submit' value="SIGN UP">
+</br></br>
+<a href="login/"> Already a user login here....</a>
+</form>
+<div class="date"> {{today}} </div>
+ </center>
+</body>
+</HTML>
+
+<!-- {% load crispy_forms_tags %}-->
+<!--
+ <form method="post" id="form">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <div class="text-center">
+       <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+-->
+
+
+
+
